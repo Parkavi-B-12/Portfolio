@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Parkavi B - A passionate Web Developer.">
+  <meta name="author" content="[Your Name]">
+  <title>Parkavi | Web Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    /* Global Styles */
+    html {
+  scroll-behavior: smooth;
+}
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f9fa;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    
+
+        .toggle-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+    a {
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    a:hover {
+      color: #0056b3;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    section {
+      padding: 5rem 2rem;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 1rem;
+    }
+
+
+    
+    
+      /* Header Styling */
+      .header {
+            background-color: #203a43;
+            color: #fff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffd700; /* Highlighted logo color */
+            text-decoration: none;
+        }
+
+        .header nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .header nav a {
+            color: #dcdcdc;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .header nav a:hover {
+            color: #ffd700;
+        }
+        .header-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #007bff;
+}
+
+        /* Mobile Menu */
+        .menu-icon {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #ffd700;
+        }
+
+        .header nav {
+            display: flex;
+        }
+
+        @media (max-width: 768px) {
+            .header nav {
+                display: none;
+                flex-direction: column;
+                background-color: #203a43;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                left: 0;
+                padding: 10px 0;
+                z-index: 999;
+            }
+
+            .header nav.active {
+                display: flex;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+        }
+
+      /* Hero Section Styling */
+      .hero {
+            height: 100vh;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero {
+  background: url('images/port1.webp') no-repeat center center/cover;
+  background-attachment: fixed; /* Creates the parallax effect */
+}
+
+
+        .hero-container {
+            max-width: 850px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            color: #ffd700; /* Highlighted heading color */
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #f0f0f0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: #dcdcdc;
+        }
+
+        .hero-buttons .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: #28a745;
+        }
+
+        .btn-primary:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            transform: scale(1.05);
+        }
+
+        
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero h2 {
+                font-size: 1.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+/* About Section */
+.about {
+    padding: 6rem 2rem; /* More padding on top for balance */
+    background: linear-gradient(to right, #40e0d0, #8a2be2);
+    text-align: center;
+}
+
+/* Section Title */
+.about .section-title {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Content Layout */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Profile Image Styling */
+.about-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px dashed #90cdf4;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Adds depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Image Hover Effect */
+.about-image img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+/* About Text Styling */
+.about-text {
+    max-width: 800px;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.7;
+    margin-top: 2rem;
+}
+
+/* Paragraph Styling */
+.about-text p {
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+/* Button Styling */
+.about-button {
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+/* Button Hover Effect */
+.about-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight enlargement */
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        text-align: center; /* Center the text on mobile */
+    }
+
+    .about .section-title {
+        font-size: 2.2rem; /* Slightly smaller title on mobile */
+    }
+
+    .about-button {
+        width: 100%;
+        padding: 1rem; /* Make the button full-width on mobile */
+    }
+}
+
+  /* Skills Section Background */
+.skills-section {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  padding: 50px 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ffffff50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #333;
+  letter-spacing: 3px;
+}
+
+/* Scrolling Wrapper */
+.skills-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Skills Container */
+.skills-container {
+  display: flex;
+  gap: 25px;
+  padding: 20px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: max-content;
+  animation: scrollSkills 12s linear infinite;
+}
+
+/* Duplicate for smooth scrolling */
+.skills-container::after {
+  content: "";
+  display: flex;
+}
+
+/* Skill Card */
+.skill-card {
+  background-color: #a6e2f3;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Skill Icons */
+.skill-card img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Skill Name */
+.skill-card p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Hover Effects */
+.skill-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card:hover img {
+  transform: rotate(360deg);
+}
+
+/* Pause Animation on Hover */
+.skills-container:hover {
+  animation-play-state: paused;
+}
+
+/* Infinite Scrolling Animation */
+@keyframes scrollSkills {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Hide Scrollbar */
+.skills-container::-webkit-scrollbar {
+  display: none;
+}
+.skills-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .skill-card {
+    min-width: 120px;
+    padding: 15px;
+  }
+
+  .skill-card img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Adjust speed for mobile */
+  .skills-container {
+    animation: scrollSkillsMobile 12s linear infinite;
+  }
+}
+
+/* Mobile Scrolling Fix */
+@keyframes scrollSkillsMobile {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* Projects Section Styles */
+.projects {
+  background: linear-gradient(to right, #40e0d0, #8a2be2);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+/* Section Title */
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* Section Description */
+.projects p {
+  font-size: 1rem;
+  color: #f5f5f5;
+  margin-bottom: 2rem;
+}
+
+/* Projects Grid */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Project Card */
+.project-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Hover Effect */
+.project-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Title */
+.project-info h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+/* Project Description */
+.project-info p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Project Status Badge */
+.project-status span {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #555;
+  background: #e9ecef;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects h2 {
+    font-size: 2rem;
+  }
+
+  .projects p {
+    font-size: 0.9rem;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-info p {
+    font-size: 0.9rem;
+  }
+}
+/* Testimonials Section */
+.testimonials {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  padding: 3rem 2rem;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  font-family: 'Poppins', sans-serif; /* Custom font for testimonials */
+}
+
+/* Title Styling */
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  font-weight: 600; /* Bold title */
+}
+
+/* Testimonial Card Styling */
+.testimonials .testimonial-card {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem; /* Increased spacing between cards */
+  opacity: 0;
+  transform: translateY(20px); /* Cards start slightly lower */
+  animation: fadeUp 1s ease-out forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover Effect on Testimonial Card */
+.testimonials .testimonial-card:hover {
+  transform: translateY(-5px); /* Lift the card */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+/* Testimonial Author Styling */
+.testimonials .testimonial-card span {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #007bff;
+}
+
+/* Testimonial Text Styling */
+.testimonial-card p {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Cards move to their original position */
+  }
+}
+
+/* Add delays for each testimonial card */
+.testimonials .testimonial-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.testimonials .testimonial-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.testimonials .testimonial-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 2rem 1rem;
+  }
+
+  .testimonials .testimonial-card {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .testimonial-card p {
+    font-size: 1rem;
+  }
+}
+
+
+ 
+/* Contact Section Styles */
+.contact-section {
+  background: url('c:/Users/parka/OneDrive/Attachments/Documents/Desktop/Quiz App/background-contact1.webp') no-repeat center center/cover, linear-gradient(to right, #40e0d0, #8a2be2);
+  padding: 4rem 1rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* Custom font for consistency */
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/* Contact Details Styling */
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  color: #fffafa;
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  color: #007bff;
+  transition: transform 0.3s ease;
+}
+
+.contact-item i:hover {
+  transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+
+.contact-item a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s; /* Added scale on hover */
+}
+
+.contact-item a:hover {
+  color: #0056b3;
+  transform: scale(1.05); /* Slight scaling on hover */
+}
+
+/* Tooltip Styling for Icons */
+.contact-item i {
+  position: relative;
+}
+
+.contact-item i::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 0.3rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.contact-item i:hover::after {
+  opacity: 1;
+}
+
+/* Social Media Links Styling */
+.social-media {
+  margin-top: 2rem;
+}
+
+.social-media a {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0 1rem;
+  transition: color 0.3s, transform 0.3s; /* Added scale on hover */
+}
+
+.social-media a:hover {
+  color: #007bff;
+  transform: scale(1.1); /* Slight scaling on hover */
+}
+
+/* Contact Form Styling */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid #007bff;
+  box-shadow: 0 0 5px rgba(3, 72, 145, 0.5);
+  outline: none;
+}
+
+.contact-form button {
+  padding: 1rem 2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 3rem 1rem; /* Less padding for small screens */
+  }
+
+  .contact-details {
+    flex-direction: column; /* Stack contact items vertically */
+    align-items: center;
+  }
+
+  .contact-item {
+    margin-bottom: 1.5rem; /* Space between items when stacked */
+  }
+
+  .social-media a {
+    font-size: 1.2rem; /* Smaller icons on mobile */
+    margin: 0 0.5rem; /* Reduced margin */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem; /* Smaller text inputs */
+  }
+}
+
+
+
+ 
+/* Footer Styles */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-about {
+  flex: 1 1 250px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+}
+
+.footer-social {
+  flex: 1 1 250px;
+}
+
+.footer-social .social-icons ul li a {
+  color: #aaa;
+  margin-right: 1rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+  color: #007bff;
+}
+
+.footer-newsletter {
+  flex: 1 1 250px;
+}
+
+.footer-newsletter input {
+  width: calc(100% - 100px);
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.footer-newsletter button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.footer-newsletter button:hover {
+  background-color: #0056b3;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #aaa;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Add fade-in animation for elements */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.bounce {
+  display: inline-block;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.typing {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black;
+  animation: typing 3s steps(20) 1s forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Sticky NavBar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  padding: 10px;
+  z-index: 100;
+}
+
+
+/* Go to Top Button Styles */
+.go-to-top-btn {
+  display: none; /* Hide the button initially */
+  position: fixed; /* Fixed position to always stay on the screen */
+  bottom: 20px; /* Position from the bottom */
+  right: 20px; /* Position from the right */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Some padding */
+  font-size: 16px; /* Text size */
+  border-radius: 50%; /* Circular button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.go-to-top-btn:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background-color: #007bff;
+  z-index: 1000;
+}
+
+/* Container for 3D effect */
+.profile-card {
+    width: 250px;
+    height: 250px;
+    perspective: 1000px; /* Perspective for 3D effect */
+    position: relative;
+    border-radius: 20px; /* Rounded corners */
+}
+
+/* Common styles for front and back sides */
+.profile-card .front, .profile-card .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Prevents the back side from being shown */
+    border-radius: 20px; /* Rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s ease, box-shadow 0.3s ease;
+}
+
+/* Styling for the front (profile photo) */
+.profile-card .front {
+  background: linear-gradient(to right, #9b4dca, #4a6ef1); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.profile-img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 50%; /* Circular profile photo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+/* Styling for the back (name and department) */
+.profile-card .back {
+  background: linear-gradient(to right, #9b4dca, #4a6ef1); /* Darker gradient for back */
+    color: #fff;
+    transform: rotateY(180deg); /* Initially hide the back */
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.profile-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase; /* Makes the name stand out */
+}
+
+.profile-text p {
+    font-size: 18px;
+    margin-top: 5px;
+    font-style: italic; /* Italicize the department name */
+}
+
+/* Hover effect to flip the card */
+.profile-card:hover .front {
+    transform: rotateY(180deg); /* Flip front to back */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.profile-card:hover .back {
+    transform: rotateY(0deg); /* Show the back on hover */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.profile-card:hover {
+    transform: scale(1.05); /* Slightly zoom in when hovered */
+}
+
+  </style>
+</head>
+<body>
+  
+<!-- Scroll Progress Indicator -->
+<div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="header-image">
+      <img src="images\Park1.jpg" alt="Profile Picture">
+  </div>
+    <a href="#" class="logo">Parkavi B</a>
+    <i class="menu-icon" onclick="toggleMenu()">☰</i>
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+</header>
+
+
+  <!-- Hero Section -->
+<section id="hero" class="hero">
+  <div class="hero">
+    <div class="hero-container">
+
+        <h1 id="typingEffect"></h1>
+<h2 class="name-animation">Hi, I'm<span> Parkavi</span></h2>
+        <h2>Aspiring Frontend Developer</h2>
+        <p>
+            I'm a B.Tech IT student passionate about crafting <strong>modern</strong> and 
+            <strong>responsive websites</strong>. With a solid foundation in <strong>C</strong>, 
+            <strong>Python</strong>, <strong>OOP with Java</strong>, and web technologies like 
+            <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, I'm building 
+            innovative solutions for the web.
+        </p>
+
+        <!-- Add a personal "About Me" paragraph -->
+        <p class="about-me">
+            I’m always eager to learn new technologies and take on challenges that push my limits. 
+            My goal is to build user-centric websites that are not only functional but also visually stunning.
+        </p>
+
+      
+        <div class="hero-buttons">
+            <a href="#projects" class="btn bounce">View My Work</a>
+            <a href="#contact" class="btn bounce">Contact Me</a>
+        </div>
+
+        
+
+        <!-- Optional: Add social media or GitHub links -->
+        <div class="social-links">
+          <a href="https://github.com/Parkavi-B-12/Parkavi-B-12" target="_blank" title="GitHub">GitHub 🐙 </a>
+            <a href="https://www.linkedin.com/in/parkavi-baskar-982511290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">LinkedIn 💼 </a>
+       
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- About Section -->
+<section id="about" class="about fade-in">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="profile-card" data-tilt>
+                <div class="front">
+                    <img src="images\Park1.jpg" alt="Profile Photo" class="profile-img">
+                </div>
+                <div class="back">
+                    <div class="profile-text">
+                        <h2>Parkavi B</h2>
+                        <p>B.Tech Information <br>Technology.<br>CIET</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-text">
+                <p>
+                    Hello, I'm a passionate and dedicated <strong>BTech IT student</strong> with a strong foundation in programming languages such as <strong>C, Python, and Java.</strong>
+                    I specialize in <strong>Frontend Development</strong>, focusing on building interactive, user-friendly websites and applications. My skills include <strong>HTML, CSS, JavaScript, and OOP principles,</strong> and I continuously strive to stay updated with the latest trends in web development.
+                </p>
+                <p>
+                    I’ve always had an innate curiosity about technology and how things work, which led me to pursue a career in IT. My journey has been fueled by a passion for creating seamless user experiences and solving real-world problems through code. I thrive on challenges and am constantly exploring new tools and techniques to sharpen my skills.
+                </p>
+                <p>
+                    In addition to my technical skills, I believe in the importance of collaboration and effective communication. I’ve had the opportunity to work on group projects, where I’ve learned how to listen, adapt, and contribute to the success of the team.
+                </p>
+                <p>
+                    Currently, I am actively seeking opportunities to work as a Frontend Developer, where I can apply my knowledge and grow alongside talented professionals. I am excited about contributing to projects that make a meaningful impact and help solve challenges in innovative ways.
+                </p>
+                <p>
+                    When I'm not coding, I enjoy exploring new technologies, reading tech blogs, and learning about design principles to enhance the aesthetic aspects of my projects.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="skills" class="skills-section">
+  <h1 class="section-title">🚀 My Skills</h1>
+
+  <div class="skills-container">
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML Icon">
+      <p>HTML</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS Icon">
+      <p>CSS</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript Icon">
+      <p>JavaScript</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java Icon">
+      <p>Java</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python Icon">
+      <p>Python</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React Icon">
+      <p>React</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Upcoming Projects Section -->
+<section id="projects" class="projects">
+  <h2>My Projects</h2>
+  <h4 class="typing">Hello, I'm a Web Developer</h4>
+
+  <p>Here are some projects I am currently working on or planning to develop in the near future. Stay tuned!</p>
+  
+  <div class="projects-container">
+    <!-- Project Idea 1 -->
+    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="project-info">
+        <h3>Quiz App</h3>
+        <p>A mobile-friendly quiz application where users can take quizzes, choose difficulty levels, and get instant results. Planned to be built using Flutter and Firebase.</p>
+        <div class="project-status">
+          <span>Status: In Progress</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Idea 2 -->
+    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="project-info">
+        <h3>Online Auction Platform</h3>
+        <p>A platform where users can bid on products, create auctions, and view profiles. Will include real-time updates and notifications. Planned to use Spring Boot and Bubble.io.</p>
+        <div class="project-status">
+          <span>Status: Planned</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Idea 3 -->
+    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="project-info">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio to showcase my skills, testimonials, and upcoming projects. Planned to use HTML, CSS, and JavaScript for development.</p>
+        <div class="project-status">
+          <span>Status: Completed</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial-card">
+      <p>"Parkavi is a highly motivated and dedicated student with a passion for learning and developing practical solutions. Her skills in web development have been impressive, and she always brings a great deal of enthusiasm to every project."</p>
+      <span>- Professor, CIET College</span>
+    </div>
+    
+    <div class="testimonial-card">
+      <p>"Parkavi's technical skills and problem-solving abilities set her apart. During her internship, she demonstrated great teamwork and quickly learned to apply her theoretical knowledge to real-world projects."</p>
+      <span>- Internship Supervisor, Infosys Technologies</span>
+    </div>
+  
+    <div class="testimonial-card">
+      <p>"It’s been a pleasure collaborating with Parkavi. Her ability to think critically and approach challenges creatively makes her an asset to any team."</p>
+      <span>- Classmate, BTech IT Program</span>
+    </div>
+  </section>
+  
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you’d like to collaborate or just say hello, feel free to reach out using the details below!</p><br>
+  
+      <div class="contact-details">
+        <!-- Email -->
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>Email:</span>
+          <a href="mailto:yourname@example.com">parkavibaskar12@gmail.com</a>
+        </div>
+  
+        <!-- Phone -->
+        <div class="contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <span>Phone:</span>
+          <a href="tel:+1234567890">+91 90479 40700</a>
+        </div>
+  
+        <!-- Location -->
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Location:</span>
+          <p>Coimbatore, Tamilnadu</p>
+        </div>
+      </div>
+  
+      <!-- Social Media Links -->
+      <div class="icon pulse">
+        <a href="https://www.instagram.com/kavi_12_01?igsh=Njg0YTdzdXdndWVk" target="_blank" title="Instagram">📸 </a>
+        <a href="https://www.twitter.com" target="_blank" title="Twitter">🐦 </a>
+        <a href="https://www.linkedin.com/in/parkavi-baskar-982511290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">💼 </a>
+        <a href="https://github.com/Parkavi-B-12/Parkavi-B-12" target="_blank" title="GitHub">🐙 </a>
+      </div>
+      
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <!-- About Section -->
+      <div class="footer-about">
+        <h3>Parkavi B</h3>
+        <p>
+          A passionate web developer dedicated to building user-friendly, high-quality websites. Let's create something amazing together.
+        </p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Social Media -->
+      <div class="footer-social">
+        <h4>Follow Me</h4>
+        <div class="social-icons">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/parkavi-baskar-982511290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i>Linkedin💼</a></li>
+          <li><a href="https://github.com/Parkavi-B-12/Parkavi-B-12" target="_blank"><i class="fab fa-github"></i>Git Hub🐙</a></li>
+          <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i>Twitter🐦</a></li>
+          <li><a href="https://www.instagram.com/kavi_12_01?igsh=Njg0YTdzdXdndWVk" target="_blank"><i class="fab fa-instagram"></i>Insta📸</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Newsletter Subscription -->
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <form>
+          <input type="email" class="shake" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>✨ Made with ❤️ by Parkavi ✨</p>
+    </div>
+  </footer>
+
+  <!-- Go to Top Button -->
+<button id="goToTopBtn" class="go-to-top-btn" onclick="scrollToTop()">
+  ↑ 
+</button>
+
+
+  <script>
+    // Toggle menu for mobile view
+    function toggleMenu() {
+        const nav = document.querySelector('.header nav');
+        nav.classList.toggle('active');
+    }
+
+  window.addEventListener('scroll', function() {
+    const elements = document.querySelectorAll('.fade-in');
+
+    elements.forEach(element => {
+      const elementPosition = element.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight;
+
+      if (elementPosition < screenPosition) {
+        element.classList.add('active'); // Add class to trigger the animation
+      }
+    });
+  });
+
+// Get the button
+const goToTopBtn = document.getElementById('goToTopBtn');
+
+// When the user scrolls down 100px from the top of the document, show the button
+window.onscroll = function() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    goToTopBtn.style.display = "block"; // Show the button
+  } else {
+    goToTopBtn.style.display = "none"; // Hide the button
+  }
+};
+
+// Function to scroll to the top
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // Smooth scroll to the top
+  });
+}
+
+const text = "Welcome to My Portfolio!";
+let index = 0;
+const typingEffect = document.getElementById('typingEffect');
+
+function typeWriter() {
+  if (index < text.length) {
+    typingEffect.textContent += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, 100); // Delay between each character
+  }
+}
+
+window.onload = typeWriter;
+
+
+
+    VanillaTilt.init(document.querySelector(".profile-card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.5
+    });
+
+    const skillsContainer = document.querySelector('.skills-container');
+
+// Pause scrolling when mouse enters the skills section
+skillsContainer.addEventListener('mouseenter', () => {
+  skillsContainer.style.animationPlayState = 'paused';
+});
+
+// Resume scrolling when mouse leaves the skills section
+skillsContainer.addEventListener('mouseleave', () => {
+  skillsContainer.style.animationPlayState = 'running';
+});
+
+</script>
+
+</body>
+</html>
